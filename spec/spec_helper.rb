@@ -1,14 +1,13 @@
-require 'bundler/setup'
 require 'emoji-regex'
+require 'pry'
 
 RSpec.configure do |config|
-  # Enable flags like --only-failures and --next-failure
+  config.order = 'random'
   config.example_status_persistence_file_path = '.rspec_status'
-
-  # Disable RSpec exposing methods globally on `Module` and `main`
   config.disable_monkey_patching!
+  config.expose_dsl_globally = true
 
-  config.expect_with :rspec do |c|
-    c.syntax = :expect
+  config.expect_with :rspec do |rspec|
+    rspec.syntax = :expect
   end
 end
