@@ -1,0 +1,24 @@
+AllCops:
+  DisplayCopNames: true
+
+LineLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+CyclomaticComplexity:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
+Style/Documentation:
+  Enabled: false
+
+Style/FileName:
+  Exclude:
+    - lib/emoji-regex.rb
