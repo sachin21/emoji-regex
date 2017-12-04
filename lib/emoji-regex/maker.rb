@@ -1,7 +1,7 @@
 module EmojiRegex
   class Maker
     def initialize
-      @input_file_path = Fetcher.new.saved_path
+      @input_file_path = File.join(__dir__, 'sorted_emoji.txt')
     end
 
     def regex
